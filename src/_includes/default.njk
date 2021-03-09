@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-  <!-- https://github.com/joshbuchea/HEAD -->
+    <!-- Recommended -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Recommended -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Elements -->
+    <meta charset="utf-8">
 
-  <!-- Elements -->
-  <meta charset="utf-8">
+    <!-- Meta -->
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="generator" content="11ty">
 
-  <!-- Meta -->
-  <meta name="description" content="{{ metadata.description }}">
-  <meta name="generator" content="11ty">
+    <!-- Icons -->
+    <!-- https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
 
-  <!-- Icons -->
-  <!-- https://favicon.io/ -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
-  <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+    <title>{{ title or metadata.title }}</title>
 
+    <link rel="stylesheet" href="{{ '/site.css' | url }}">
+  </head>
 
-  <title>{{ title or metadata.title }}</title>
+  <body class="font-sans leading-normal tracking-normal text-gray-900">
 
-  <link rel="stylesheet" href="{{ '/site.css' | url }}">
-</head>
-
-<body class="font-sans leading-normal tracking-normal text-gray-900">
-
+    <div id="main" class="grid grid-cols-12 gap-2 justify-evenly m-2">
+      <div class="bg-green-500 order-1 col-span-6  md:col-span-6  lg:col-span-6 flex">
+        <div class="bg-yellow-500">Logo</div>
+        <div class="bg-yellow-500 ml-2">Business Name</div>
+      </div>
+      <div class="bg-green-500 order-2 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
+        <div class="bg-yellow-500 ml-2">Menu</div>
+        <div class="bg-yellow-500 ml-2">Menu</div>
+        <div class="bg-yellow-500 ml-2">Menu</div>
+      </div>
+      <div class="bg-green-500 order-3 col-span-12 md:col-span-6  lg:col-span-8 flex justify-center items-center md:order-4">
+        <div>Hero Image</div>
+      </div>
+      <div class="bg-green-500 order-4 col-span-12 md:col-span-6  lg:col-span-4 flex flex-col text-center md:order-3">
+        <div class="bg-yellow-500">CTA Heading</div>
+        <div class="bg-yellow-500">CTA Description</div>
+        <div class="bg-yellow-500">CTA Buttons</div>
+      </div>
+      <div class="bg-green-500 order-5 col-span-12 md:col-span-12 lg:col-span-12 flex flex-col place-items-center">
+        <div class="bg-yellow-500">Testimonial Heading</div>
+        <div class="bg-yellow-500 flex flex-wrap justify-evenly">
+          <div class="bg-red-500 mx-2 ">Testimonial</div>
+          <div class="bg-red-500 mx-2 ">Testimonial</div>
+          <div class="bg-red-500 mx-2 ">Testimonial</div>
+        </div>
+      </div>
+      <div class="bg-green-500 order-6 col-span-6  md:col-span-6  lg:col-span-6">Copyright</div>
+      <div class="bg-green-500 order-7 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
+        <div class="bg-yellow-500 ml-2">Icon</div>
+        <div class="bg-yellow-500 ml-2">Icon</div>
+        <div class="bg-yellow-500 ml-2">Icon</div>
+      </div>
+    </div>
+  </div>
   {{ content | safe }}
 
 </body>
