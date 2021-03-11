@@ -31,26 +31,22 @@
     <div id="main" class="grid grid-cols-12 gap-2 justify-evenly m-2">
       <div class="bg-green-500 order-1 col-span-6  md:col-span-6  lg:col-span-6 flex">
         <div class="bg-yellow-500">Logo</div>
-        <div class="bg-yellow-500 ml-2">{{metadata.business.name}}</div>
+        <div class="bg-yellow-500 ml-2">Business Name</div>
       </div>
       <div class="bg-green-500 order-2 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
-        {% for item in metadata.nav %}
-          <div class="bg-yellow-500 ml-2">
-            <a href="{{ item.url | safe }}">{{ item.label }}</a>
-          </div>
-        {% endfor %}
+        <div class="bg-yellow-500 ml-2">Menu</div>
+        <div class="bg-yellow-500 ml-2">Menu</div>
+        <div class="bg-yellow-500 ml-2">Menu</div>
       </div>
-      {{ content | safe }}
-      <div class="bg-green-500 order-6 col-span-6  md:col-span-6  lg:col-span-6">Copyright
-        {{metadata.businessName}}. All rights Reserved.</div>
+      <div class="bg-green-500 order-6 col-span-6  md:col-span-6  lg:col-span-6">Copyright</div>
       <div class="bg-green-500 order-7 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
-        {% for item in metadata.business.social %}
-          <div class="bg-yellow-500 ml-2">
-            <a href="{{ item.url | safe }}" target="_blank" >{{ item.icon }}</a>
-          </div>
-        {% endfor %}
+        <div class="bg-yellow-500 ml-2">Icon</div>
+        <div class="bg-yellow-500 ml-2">Icon</div>
+        <div class="bg-yellow-500 ml-2">Icon</div>
       </div>
     </div>
   </div>
+  {{ content | safe }}
+
 </body>
 </html>

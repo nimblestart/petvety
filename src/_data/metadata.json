@@ -1,4 +1,63 @@
 {
   "title": "Lacombe Pet Clinic",
-  "description": "Lacombe Pet Clinic is a well-equipped, full-service veterinary clinic offering a wide range of healthcare and complementary services. All of your pets needs from routine services to major surgeries can be taken care of by our Veterinarians. We take pride in providing veterinary care of the highest possible quality to all of our patients in accordance with the highest standards of the veterinary profession. We are located close to Highway 2A and Highway 12 intersection in Lacombe serving nearby communities - Lacombe, Blackfalds, Ponoka, Gull Lake. Services - vaccinations, neuter, spays, deworming, dental cleaning, health exam, health certificates, surgery, emergency services, self dog wash, grooming services."
+  "description": "Lacombe Pet Clinic is a well-equipped, full-service veterinary clinic offering a wide range of healthcare and complementary services. All of your pets needs from routine services to major surgeries can be taken care of by our Veterinarians. We take pride in providing veterinary care of the highest possible quality to all of our patients in accordance with the highest standards of the veterinary profession. We are located close to Highway 2A and Highway 12 intersection in Lacombe serving nearby communities - Lacombe, Blackfalds, Ponoka, Gull Lake. Services - vaccinations, neuter, spays, deworming, dental cleaning, health exam, health certificates, surgery, emergency services, self dog wash, grooming services.",
+  "nav": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "business": {
+    "name": "Lacombe Pet Clinic",
+    "description": "Lacombe Pet Clinic is a well-equipped, full-service veterinary clinic offering a wide range of healthcare and complementary services.",
+    "address": {
+      "street": "2, 5030, Highway 2A",
+      "street_2": "Fake Road",
+      "city": "Lacombe",
+      "state": "AB",
+      "zipcode": "T4L 1K5",
+      "country": "CA"
+    },
+    "googleMapsURL": "Lacombe Pet Clinic",
+    "contact": {
+      "phone": "(403) 789-3329",
+      "fax": "(403) 789-0239",
+      "email": "lacombepetclinic@gmail.com"
+    },
+    "hours": {
+      "Mon-Fri": "8 AM - 5 PM",
+      "Sat": "AM - 1PM on First Saturday of month",
+      "Sun": "Closed"
+    },
+    "social": [
+      {
+        "icon": "facebook",
+        "url": "https://www.facebook.com/lacombepetclinic/"
+      },
+      {
+        "icon": "instagram",
+        "url": "https://www.instagram.com/lacombepetclinic/"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com/PetLacombe"
+      },
+      {
+        "icon": "linkedin",
+        "url": "https://www.linkedin.com/"
+      }
+    ]
+  }
 }
