@@ -1,29 +1,47 @@
 ---
 layout: default
 ---
-<div class="order-3 col-span-12 md:col-span-8  lg:col-span-8 flex md:order-4 items-center">
-  <div class="relative top-0 right-0 flex h-full hidden lg:inline-flex">
-    <div>
-      <svg fill="currentColor" viewBox="0 0 100 100" class="absolute inset-y-0 z-20 h-full text-gray-50">
-        <polygon id="diagonal" points="0,0 12,0 2,100 0,100"></polygon>
-      </svg>
+<div class="grid grid-cols-12 gap-2 justify-evenly m-4">
+
+  <div class="order-1 col-span-12 md:col-span-8  lg:col-span-8 flex md:order-2 items-center">
+    <div class="relative z-10 -top-16 right-0 flex h-full hidden lg:inline-flex">
+        <svg fill="currentColor" viewBox="0 0 100 100" class="absolute h-full text-gray-50">
+          <polygon id="diagonal" points="0,0 20,0 0,100 0,100"></polygon>
+        </svg>
+    </div>
+    <div class="z-0 relative -top-16 right-0"><img src="{{ '/hero.jpg' | url }}"></div>
+  </div>
+  <div
+    class="z-50 order-2 col-span-12 md:col-span-4 lg:col-span-4 flex flex-col md:order-1 items-center justify-center space-y-6">
+    <div class="font-extrabold text-2xl md:text-4xl lg:text-6xl lg:-mr-14 text-center">Your Lovely Pet,
+      <br class="hidden md:inline-flex"><span class="text-blue-500">is ours too!</span>
+    </div>
+    <div class="text-justify text-lg md:text-xl lg:text-2xl lg:-mr-3">We understand that a pet is part of the family,
+      the
+      day your pet enters our
+      clinic it becomes part of our family. Call us, we would love to hear about your pet.</div>
+    <div class="flex flex-nowrap text-xl">
+      <a href="tel:+14037893329" class="flex items-center text-white bg-blue-500 p-2 hover:bg-blue-600 rounded">
+        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+        </svg>
+        (403) 789-3329</a>
+      <a href="https://maps.google.com/maps?saddr=current+location&amp;daddr=5030+AB-2A+Lacombe+AB+T4L+1K4"
+        target="_blank" class="ml-4 flex items-center text-gray-800 bg-gray-300 p-2 hover:bg-gray-400 rounded">
+        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        </svg>Directions</a>
     </div>
   </div>
-  <div class="z-0 relative top-0 right-0"><img src="{{ '/hero.jpg' | url }}" class=""></div>
-</div>
-<div class="z-50 order-4 col-span-12 md:col-span-4 lg:col-span-4 flex flex-col md:order-3 items-center justify-center">
-  <div class="font-extrabold text-2xl md:text-4xl lg:text-6xl lg:-mr-14 text-center">Your Lovely Pet,
-    <br class="hidden md:inline-flex"><span class="text-blue-500">is ours too!</span>
-  </div>
-  <div class="text-justify text-lg md:text-xl lg:text-2xl lg:-mr-3 my-6">We understand that a pet is part of the family, the day your pet enters our
-    clinic it becomes part of our family. Call us, we would love to hear about your pet.</div>
-  <div class="">Phone, Directions</div>
-</div>
-<div class="bg-green-500 z-50 order-5 col-span-12 md:col-span-12 lg:col-span-12 flex flex-col items-center">
-  <div class="bg-yellow-500">Testimonial Heading</div>
-  <div class="bg-yellow-500 flex flex-wrap justify-evenly">
-    <div class="bg-red-500 mx-2 ">Testimonial</div>
-    <div class="bg-red-500 mx-2 ">Testimonial</div>
-    <div class="bg-red-500 mx-2 ">Testimonial</div>
+  <div class="bg-green-500 z-50 order-3 col-span-12 md:col-span-12 lg:col-span-12 flex flex-col items-center">
+    <div class="bg-yellow-500">Testimonial Heading</div>
+    <div class="bg-yellow-500 flex flex-wrap justify-evenly">
+      <div class="bg-red-500 mx-2 ">Testimonial</div>
+      <div class="bg-red-500 mx-2 ">Testimonial</div>
+      <div class="bg-red-500 mx-2 ">Testimonial</div>
+    </div>
   </div>
 </div>

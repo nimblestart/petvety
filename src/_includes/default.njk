@@ -32,9 +32,9 @@
         <div class=""><img src="{{ '/logo.svg' | url }}" class="h-12"></div>
         <div class="ml-2 text-2xl md:text-3xl lg:text-4xl font-semibold">{{metadata.business.name}}</div>
       </div>
-      <div class="order-2 col-span-2 md:col-span-5 hidden md:inline-flex flex flex-wrap justify-end items-center">
+      <div class="z-50 order-2 col-span-2 md:col-span-5 hidden md:inline-flex flex flex-wrap justify-end items-center">
         {% for item in metadata.nav %}
-          <div class="ml-4 text-lg font-medium hover:bg-blue-300 px-2 py-1 rounded">
+          <div class="mx-2 text-lg font-medium bg-gray-50 hover:bg-blue-300 px-2 py-0 rounded">
             <a href="{{ item.url | safe }}">{{ item.label }}</a>
           </div>
         {% endfor %}
@@ -42,10 +42,12 @@
       <div class="order-3 col-span-2 md:col-span-5 md:hidden flex flex-wrap justify-end items-center">
         X
       </div>
-      {{ content | safe }}
-      <div class="order-6 col-span-12 md:col-span-6 lg:col-span-6 text-sm text-center md:text-left text-gray-400">Copyright ©
+    </div>
+    {{ content | safe }}
+    <div class="grid grid-cols-12 gap-2 justify-evenly m-4">
+      <div class="order-1 col-span-12 md:col-span-6 lg:col-span-6 text-sm text-center md:text-left text-gray-400">Copyright ©
         {{metadata.business.name}}. All rights Reserved.</div>
-      <div class="order-7 col-span-12 md:col-span-6 lg:col-span-6 flex flex-wrap justify-center md:justify-end">
+      <div class="order-2 col-span-12 md:col-span-6 lg:col-span-6 flex flex-wrap justify-center md:justify-end">
         {% for item in metadata.business.social %}
           <div class="ml-6 text-gray-400">
             <a href="{{ item.url | safe }}" target="_blank" rel="noreferrer noopener">
