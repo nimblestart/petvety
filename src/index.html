@@ -1,15 +1,25 @@
 ---
 layout: default
 ---
-<div class="bg-green-500 order-3 col-span-12 md:col-span-6  lg:col-span-8 flex justify-center items-center md:order-4">
-  <div>Hero Image</div>
+<div class="order-3 col-span-12 md:col-span-8  lg:col-span-8 flex md:order-4 items-center">
+  <div class="relative top-0 right-0 flex h-full hidden lg:inline-flex">
+    <div>
+      <svg fill="currentColor" viewBox="0 0 100 100" class="absolute inset-y-0 z-20 h-full text-gray-50">
+        <polygon id="diagonal" points="0,0 12,0 2,100 0,100"></polygon>
+      </svg>
+    </div>
+  </div>
+  <div class="z-0 relative top-0 right-0"><img src="{{ '/hero.jpg' | url }}" class=""></div>
 </div>
-<div class="bg-green-500 order-4 col-span-12 md:col-span-6  lg:col-span-4 flex flex-col text-center md:order-3">
-  <div class="bg-yellow-500">Your Lovely Pet, is ours too!</div>
-  <div class="bg-yellow-500">We understand that a pet is part of the family, the day your pet enters our clinic it becomes part of our family. We would love to hear about your pet, give us a call.</div>
-  <div class="bg-yellow-500">Phone, Directions</div>
+<div class="z-50 order-4 col-span-12 md:col-span-4 lg:col-span-4 flex flex-col md:order-3 items-center justify-center">
+  <div class="font-extrabold text-2xl md:text-4xl lg:text-6xl lg:-mr-14 text-center">Your Lovely Pet,
+    <br class="hidden md:inline-flex"><span class="text-blue-500">is ours too!</span>
+  </div>
+  <div class="text-justify text-lg md:text-xl lg:text-2xl lg:-mr-3 my-6">We understand that a pet is part of the family, the day your pet enters our
+    clinic it becomes part of our family. Call us, we would love to hear about your pet.</div>
+  <div class="">Phone, Directions</div>
 </div>
-<div class="bg-green-500 order-5 col-span-12 md:col-span-12 lg:col-span-12 flex flex-col place-items-center">
+<div class="bg-green-500 z-50 order-5 col-span-12 md:col-span-12 lg:col-span-12 flex flex-col items-center">
   <div class="bg-yellow-500">Testimonial Heading</div>
   <div class="bg-yellow-500 flex flex-wrap justify-evenly">
     <div class="bg-red-500 mx-2 ">Testimonial</div>

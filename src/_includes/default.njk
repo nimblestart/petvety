@@ -26,27 +26,34 @@
     <link rel="stylesheet" href="{{ '/site.css' | url }}">
   </head>
 
-  <body class="font-sans leading-normal tracking-normal text-gray-900">
-
-    <div id="main" class="grid grid-cols-12 gap-2 justify-evenly m-2">
-      <div class="bg-green-500 order-1 col-span-6  md:col-span-6  lg:col-span-6 flex">
-        <div class="bg-yellow-500">Logo</div>
-        <div class="bg-yellow-500 ml-2">{{metadata.business.name}}</div>
+  <body class="text-gray-800 font-sans bg-gray-50">
+    <div class="grid grid-cols-12 gap-2 justify-evenly m-4">
+      <div class="order-1 col-span-10 md:col-span-7 flex items-center">
+        <div class=""><img src="{{ '/logo.svg' | url }}" class="h-12"></div>
+        <div class="ml-2 text-2xl md:text-3xl lg:text-4xl font-semibold">{{metadata.business.name}}</div>
       </div>
-      <div class="bg-green-500 order-2 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
+      <div class="order-2 col-span-2 md:col-span-5 hidden md:inline-flex flex flex-wrap justify-end items-center">
         {% for item in metadata.nav %}
-          <div class="bg-yellow-500 ml-2">
+          <div class="ml-4 text-lg font-medium hover:bg-blue-300 px-2 py-1 rounded">
             <a href="{{ item.url | safe }}">{{ item.label }}</a>
           </div>
         {% endfor %}
       </div>
+      <div class="order-2 col-span-2 md:col-span-5 md:hidden flex flex-wrap justify-end items-center">
+        X
+      </div>
       {{ content | safe }}
-      <div class="bg-green-500 order-6 col-span-6  md:col-span-6  lg:col-span-6">Copyright
-        {{metadata.businessName}}. All rights Reserved.</div>
-      <div class="bg-green-500 order-7 col-span-6  md:col-span-6  lg:col-span-6 flex flex-wrap justify-end">
+      <div class="order-6 col-span-12 md:col-span-6 lg:col-span-6 text-sm text-center md:text-left text-gray-400">Copyright ©
+        {{metadata.business.name}}. All rights Reserved.</div>
+      <div class="order-7 col-span-12 md:col-span-6 lg:col-span-6 flex flex-wrap justify-center md:justify-end">
         {% for item in metadata.business.social %}
-          <div class="bg-yellow-500 ml-2">
-            <a href="{{ item.url | safe }}" target="_blank" >{{ item.icon }}</a>
+          <div class="ml-6 text-gray-400">
+            <a href="{{ item.url | safe }}" target="_blank" rel="noreferrer noopener">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewbox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
           </div>
         {% endfor %}
       </div>
